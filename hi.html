@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html>
+
+<style type="text/css">
+    /* bring in the claro theme */
+    @import "http://ajax.googleapis.com/ajax/libs/dojo/1.6/dijit/themes/claro/claro.css";
+</style>
+
 <head>
     <meta charset="utf-8">
     <title>Tutorial: Hello Dojo!</title>
@@ -14,58 +20,19 @@
 	
 	
 </head>
-<body>
-    <h1 id="greeting">Hello</h1>
-	
-	
-	
-	
-	
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-<button id="slideAwayButton">Slide block away</button>
-<button id="slideBackButton">Slide block back</button>
+
+    
  
-<div id="slideTarget" class="red-block slide">
-    A red block
-</div>
 <script>
-    dojo.require("dojo.fx");
- 
-    dojo.ready(function(){
-        var slideAwayButton = dojo.byId("slideAwayButton"),
-            slideBackButton = dojo.byId("slideBackButton"),
-            slideTarget = dojo.byId("slideTarget");
- 
-        dojo.connect(slideAwayButton, "onclick", function(evt){
-            dojo.fx.slideTo({ node: slideTarget, left: "200", top: "200" }).play();
-        });
-        dojo.connect(slideBackButton, "onclick", function(evt){
-            dojo.fx.slideTo({ node: slideTarget, left: "0", top: "100" }).play();
-        });
-    });
+    // Include the class
+    dojo.require("dijit.Editor");
+  
 </script>
 
+<body class="claro">
+<div data-dojo-type="dijit.Editor" style="width:800px;min-height:100px;" data-dojo-props="extraPlugins:['prettyprint','pagebreak','showblocknodes','preview','save','toolbarlinebreak','normalizeindentoutdent','breadcrumb','findreplace','pastefromword','insertanchor','collapsibletoolbar','foreColor', 'hiliteColor','blockquote','smiley','uploadImage']">
+    This is the <strong>default</strong> content.
+</div>
 
 	
 </body>
