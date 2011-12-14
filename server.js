@@ -1,5 +1,5 @@
 
-var http = require('http') sys = require('util'),      fs = require('fs'),    index;
+var http = require('http'), sys = require('util'),      fs = require('fs'),    index;
 
 
 fs.readFile('./hi.html', function (err, data) {
