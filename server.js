@@ -11,9 +11,9 @@ fs.readFile('./hi.html', function (err, data) {
  
  
 var server = http.createServer(function (req, res) {
-  res.writeHead(200, { "Content-Type": "text/plain" });
+  res.writeHead(200, { "Content-Type": "text/html" });
      res.write(index);
-  res.end("Hello world\n");
+  res.end();
 });
  
 server.listen(process.env.PORT || 8001);
