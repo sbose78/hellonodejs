@@ -1,5 +1,5 @@
 
-var resource=require("getfiles.js");
+var resource=require("./getfiles");
 
 var handle = {}
 handle["/"] = resource.source;
