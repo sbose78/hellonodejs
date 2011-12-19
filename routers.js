@@ -13,4 +13,4 @@ function route(pathname)
 	return 'hi';
 }
 
-export.route=route;
+exports.route=route;

@@ -8,5 +8,5 @@ function upload()
 	return "came from upload";
 }
 
-export.source=source;
-export.upload=upload;
+exports.source=source;
+exports.upload=upload;
