@@ -12,10 +12,10 @@ fs.readFile('./hi.html', function (err, data) {
  
 var server = http.createServer(function (req, res) {
 
-	//var pathname = url.parse(req.url).pathname;
+	var pathname = url.parse(req.url).pathname;
      res.writeHead(200, { "Content-Type": "text/html" });
      //res.write(index);
-	  res.write("Request for " );//+ pathname + " received.");
+	  res.write("Request for " + pathname + " received.");
 	 
      res.end();
 });
