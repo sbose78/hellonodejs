@@ -1,5 +1,6 @@
 
 var url = require("url");
+var routers=require("routers.js");
 var http = require('http'), sys = require('util'),      fs = require('fs'),    index;
 
 
@@ -17,7 +18,8 @@ var server = http.createServer(function (req, res) {
 	var pathname = url.parse(req.url).pathname;
      res.writeHead(200, { "Content-Type": "text/html" });
      //res.write(index);
-	  res.write("Request for " + pathname + " received.");
+	 var ans= routers.route(pathname);
+	  res.write("Request for " + pathname + " received.----" +ans +"something");
 	 
      res.end();
 });
