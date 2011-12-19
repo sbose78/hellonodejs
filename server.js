@@ -15,7 +15,7 @@ var server = http.createServer(function (req, res) {
 	var pathname = url.parse(req.url).pathname;
      res.writeHead(200, { "Content-Type": "text/html" });
      //res.write(index);
-	  res.write("Request for " + pathname + " received.");
+	  res.write("Request for " + req.url + " received.");
 	 
      res.end();
 });
