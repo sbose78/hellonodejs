@@ -1,6 +1,6 @@
 
 var url = require("url");
-var routers=require("./routers.");
+var routers=require("./routers");
 var http = require('http'), sys = require('util'),      fs = require('fs'),    index;
 
 
