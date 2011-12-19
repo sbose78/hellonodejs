@@ -10,7 +10,7 @@ handle["/upload"] = resource.upload;
 function route(pathname)
 {
 	var ans = handle[pathname]();
-	return ans;
+	return ans+'hi';
 }
 
 export.route=route;
